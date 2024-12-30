@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#f36451" />
+        <link rel="shortcut icon" type="image/x-icon"
+            href="/images/icon.jpg" />
+
+        <!-- FONT ROBOTO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Niramit:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- FONT ICONS -->
+        <link href="/libs/font-awesome-pro/css/all.min.css" rel="stylesheet">
+
+        <!-- Owl Carousel 2 core CSS -->
+        <link type="text/css" href="/libs/css/owl.carousel.min.css"
+            rel="stylesheet" />
+
+        <!-- Bootstrap 4 -->
+        <link type="text/css" rel="stylesheet" href="/libs/css/bootstrap.css?1">
+
+        <!-- Animate -->
+        <link type="text/css" rel="stylesheet" href="/libs/css/animate.min.css">
+
+        <!-- Magnific -->
+        <link type="text/css" rel="stylesheet"
+            href="/libs/css/magnific-popup.css">
+
+        <link type="text/css" rel="stylesheet" href="/libs/css/toastr.min.css">
+
+        <!-- PLUGINS SLICKSLIDER -->
+        <link rel="stylesheet" type="text/css" href="/libs/css/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="/libs/css/slick-theme.css" />
+
+        <!-- IMAGE MARKER -->
+        <link rel="stylesheet" type="text/css"
+            href="/libs/css/jquery.image-marker.css" />
+
+        <!-- SCALIZE -->
+        <link rel="stylesheet" type="text/css"
+            href="/libs/css/scalize.min.js" />
+
+        <link rel="stylesheet"
+            href="/libs/css/swiper-bundle.min.css" />
+
+        <!-- INDEX CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+
+        <link rel="stylesheet" type="text/css" href="/css/highlights.css">
+
+        <!-- css,js,jq -->
+        <script type="text/javascript" src="/libs/js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="/libs/js/jquery-ui.js"></script>
+
+        <!-- This site is optimized with the Yoast SEO plugin v19.6 - https://yoast.com/wordpress/plugins/seo/ -->
+        <title>Blog - Phần mềm quản lý Spa, Thẩm mỹ viện
+            EZS</title>
+        <meta name="description"
+            content="Phần mềm quản lý spa, bán hàng ưu việt nhất giúp giảm chi phí và tăng doanh thu, chất lượng dịch vụ tích hợp sẵn website / APP giúp quản lý khách hàng, công nợ khách hàng, thẻ dịch vụ online, tích hợp ví điện tử, đặt lịch trực tuyến &amp; đánh giá phản hồi của khách hàng" />
+        <link rel="canonical" href="https://ezs.vn/" />
+        <meta property="og:locale" content="vi_VN" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title"
+            content="Blog - Phần mềm quản lý Spa, Thẩm mỹ viện EZS" />
+        <meta property="og:description"
+            content="Phần mềm quản lý spa là một giải pháp tuyệt vời giúp xử lý các công việc quản trị và các tác nhân gây căng thẳng hàng ngày khi điều hành một spa bận rộn." />
+        <meta property="og:url"
+            content="https://ezs.vn/bang-gia.html" />
+        <meta property="og:site_name"
+            content="Phần mềm quản lý Spa, Thẩm mỹ viện EZS" />
+
+    </head>
+
+    <style>
+    .vh-100 {
+        height: 100vh;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogsSwiper .swiper-item-iframe {
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .swiper-button-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .blog-close,
+    .swiper-button-prev2,
+    .swiper-button-next2 {
+        width: 56px;
+        height: 56px;
+        background: #272727;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f1f1f1;
+        cursor: pointer;
+        transition: all 250ms;
+    }
+
+    .swiper-button-prev2:hover,
+    .swiper-button-next2:hover,
+    .blog-close:hover {
+        background: #303030;
+    }
+
+    .swiper-button-prev2.swiper-button-disabled,
+    .swiper-button-next2.swiper-button-disabled {
+        opacity: .4;
+    }
+
+    .swiper-button-prev2 svg,
+    .swiper-button-next2 svg {
+        width: 24px;
+    }
+
+    .blog-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 50;
+        top: 16px;
+        right: 16px
+    }
+
+    .blog-close svg {
+        width: 24px;
+    }
+    .blog-close:hover {
+        color: #fff;
+    }
+
+    @media (max-width: 767px) {
+        .blog-close, .swiper-button-prev2, .swiper-button-next2 {
+            width: 42px;
+            height: 42px;
+        }
+        .blog-close svg,.swiper-button-prev2 svg, .swiper-button-next2 svg {
+            width: 22px;
+        }
+        .swiper-item {
+            padding-top: 65px !important;
+        }
+        .blog-close {
+            top: 12px;
+            left: 20px;
+        }
+        .swiper-button-control {
+            flex-direction: row;
+            transform: none;
+            top: 12px;
+            right: 20px;
+        }
+    }
+    #app.zs {
+        display: none !important;
+    }
+    .zalo-chat-widget {
+            display: none !important;
+        }
+</style>
+
+    <body class="home blog hfeed no-sidebar"> <!--body-notification -->
+        <!--<div class="notification-sliders">-->
+        <!--	<div class="notification-slider">-->
+        <!--		<div class="notification-slider__item bg-1">-->
+        <!--			Sử dụng phần mềm quản lý chỉ <b>3.000.000</b> / năm ! <a href="http://m.me/phanmemezs/">Mua ngay!</a>-->
+        <!--		</div>-->
+        <!--		<div class="notification-slider__item bg-2">-->
+        <!--			Sở hữu APP thương hiệu riêng chỉ <b>5.990.000</b> ! <a href="http://m.me/phanmemezs/">Đăng ký!</a>-->
+        <!--		</div>-->
+        <!--	</div>-->
+        <!--</div>-->
+        <div class="w-100 vh-100 position-fixed" style="z-index: 10">
+            <a href="/" class="blog-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </a>
+            <div class="swiper blogsSwiper" data-page="1">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">Slide 1</div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-control">
+                    <div class="swiper-button-prev2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                        </svg>
+
+                    </div>
+                    <div class="swiper-button-next2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/libs/js/email.min.js"></script>
+        <script type="text/javascript" src="/libs/js/slick.js"></script>
+        <!-- Owl Carousel 2 core js -->
+        <script type="text/javascript" src="/libs/js/popper.min.js"></script>
+        <script type="text/javascript" src="/libs/js/bootstrap.min.js"></script>
+        <script type="text/javascript"
+            src="/libs/js/owl.carousel.min.js"></script>
+        <script type="text/javascript"
+            src="/libs/js/theia-sticky-sidebar.js"></script>
+        <script type="text/javascript"
+            src="/libs/js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript"
+            src="/libs/js/jquery.image-marker.js"></script>
+        <script type="text/javascript"
+            src="/libs/js/scalize/scalize.min.js"></script>
+        <script
+            src="/libs/js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="/libs/js/typed.js"></script>
+        <script type="text/javascript" src="/libs/js/toastr.min.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
+
+        <script>
+        function updateSwiper({
+            elWrap,
+            Items
+        }) {
+            for (let item of Items) {
+                let el = $("<div class='swiper-slide' />")
+                // el.append(`
+                //     <div class="h-100 py-3 swiper-item">
+                //         <div class="h-100 swiper-item-iframe">
+                //             <img style="object-fit-cover" class="w-100 h-100" src="${item.featured_image_url}" />
+                //         </div>
+                //     </div>
+                // `)
+                el.append(`
+                    <div class="h-100 py-3 swiper-item">
+                        <div class="h-100 swiper-item-iframe">
+                            <iframe
+                                class="w-100 h-100"
+                                style="aspect-ratio: 315/560"
+                                src="https://www.youtube.com/embed/${item}"
+                                data-src="https://www.youtube.com/embed/${item}"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                `)
+                elWrap.append(el)
+            }
+        }
+
+        $(document).ready(function () {
+
+            let swiper = null
+            let Page = 1
+            let Total = 1
+            let isLoading = false;
+
+            let blogsSwiper = $(".blogsSwiper");
+            let blogsSwiperWrap = blogsSwiper.find(".swiper-wrapper");
+
+                    let res = [
+                        "zBocgy5bOvU",
+                        "uDL_8d4UqkM",
+                        "xqrHKI2rTKk",
+                        "K45I4LEDb8o",
+                        "5yse8-_IPhg",
+                        "lTmyTrXmFRg",
+                        "H_7zEu_YpDg",
+                        "X5Ssw5ZO82w",
+                        "V3EGk9nte60",
+                        "lu2q3pO7Vis"
+                    ]
+                    Total = 100;
+                    updateSwiper({
+                        elWrap: blogsSwiperWrap,
+                        Items: res
+                    })
+
+                    swiper = new Swiper(".blogsSwiper", {
+                        direction: "vertical",
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        speed: 1000,
+                        mousewheel: true,
+                        // pagination: {
+                        //     el: ".swiper-pagination",
+                        //     clickable: true,
+                        // },
+                        navigation: {
+                            nextEl: ".swiper-button-next2",
+                            prevEl: ".swiper-button-prev2",
+                        },
+                        on: {
+                            init: function (slider) {
+                                // let elCurrent = $(slider.slides[slider.activeIndex])
+                                // let iframe = elCurrent.find("iframe")
+                                // iframe.attr("src", iframe.attr("src") + "?autoplay=1&mute=1")
+                            },
+
+                        }
+                    });
+
+                    swiper.on('reachEnd', function () {
+
+                        if (!isLoading && Page < Total) {
+                            isLoading = true
+                            Page = Page + 1
+                            $.ajax({
+                                    method: "GET",
+                                    url: `/wp-json/wp/v2/posts/?per_page=5&page=${Page}&categories=1`,
+                                })
+                                .done(function (res, status, xhr) {
+                                    isLoading = false
+                                    updateSwiper({
+                                        elWrap: blogsSwiperWrap,
+                                        Items: res
+                                    })
+                                    swiper.update()
+                                })
+                        }
+                    });
+
+                    swiper.on('activeIndexChange', function (slider) {
+
+                        let elCurrent = $(slider.slides[slider.activeIndex])
+                        let elCurrentPrev = $(slider.slides[slider.activeIndex - 1])
+                        let elCurrentNext = $(slider.slides[slider.activeIndex + 1])
+                        if (elCurrentPrev.length > 0) {
+                            elCurrentPrev.find("iframe").attr("src", elCurrentPrev.find("iframe")
+                                .attr("data-src"))
+                        }
+                        if (elCurrentNext.length > 0) {
+                            elCurrentNext.find("iframe").attr("src", elCurrentNext.find("iframe")
+                                .attr("data-src"))
+                        }
+                        let iframe = elCurrent.find("iframe")
+                        iframe.attr("src", iframe.attr("src") + "?autoplay=1&playsinline=1")
+                    });
+
+               
+
+        })
+    </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-122921925-1"></script>
+        <script>
+        setTimeout(function() {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122921925-1');
+        }, 4000);
+        </script>
+        <div class="zalo-chat-widget" data-oaid="52576634589693766"
+            data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+            data-autopopup="0" data-width data-height></div>
+
+        <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
+    </body>
+
+</html>
